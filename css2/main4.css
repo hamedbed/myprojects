@@ -1,0 +1,554 @@
+@font-face{
+    font-family: "Vazir";
+    src: url("../fonts/Vazir/Vazir-FD-WOL.woff2") format("woff2"),
+         url("../fonts/Vazir/Vazir-FD-WOL.woff") format("woff"),
+         url("../fonts/Vazir/Vazir-FD-WOL.ttf") format("truetype");
+}
+
+/* :root{
+    --ff-primary: "Vazir"
+} */
+
+body{
+    font-family: "Vazir";
+}
+/* قسمت هدر */
+.header-up{
+    width: 100%;
+    height: 30px;
+    background-color: gray;
+    position: relative;
+    border-radius: 5px;
+}
+
+.header-up-text{ 
+    position: absolute;
+    font-family: var(--f-f);
+    font-size: 0.9rem;
+    color: rgb(3, 3, 31);
+    display: inline-block;
+    text-align: center;
+    transform: translate(450PX, -93px);
+    margin-top: 100px;
+}
+
+.between-headers{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left,blue,khaki,gray,red);
+    margin-top: 0px;
+}
+
+.header-down{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: chocolate;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu{
+    margin-top: -20px;
+    list-style-type: none;
+}
+
+.header-down-menu{
+    position: absolute;
+    width: 1000px;
+    height: 20px;
+
+}
+
+a{
+    direction: rtl;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+}
+
+a:visited{
+    color: blue;
+}
+
+@media (min-width:770px){
+    .header-down-menu, .menu{
+        display: flex;
+    }
+    .header-down-menu{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width:990px){
+    .header-down-menu{
+        flex-direction: row-reverse;
+        justify-content:space-evenly;
+    }
+}
+
+.header-down-image{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(109, 202, 159);
+    transform: translate(970px,30px);
+    position: relative;
+    border-radius: 20px;
+}
+
+.header-down-image-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* پایان قسمت هدر */
+
+/* قسمت اسلایدهای سمت راست */
+.flexcontainer{
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.slide-right-1{
+    width: 15%;
+    height: 250px;
+    background-color: #d5d5d5;
+    transform: translateX(895px);
+    display: inline-block;
+    margin-top: 7px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slide-right-1-space{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left,blue,khaki,gray,red);
+    transform: translateY(-20px);
+}
+
+.slide-right-1-3line{
+    width: 20px;
+    height: 20px;
+    background-color: #d5d5d5;
+}
+
+.slide-right-1-title{
+    display: inline-block;
+    /* position: absolute; */
+    transform: translate(47px,-8px);
+    font-size: 0.8rem;
+    color: rgb(222, 12, 230);
+    font-family: var(--ff-primary);
+}
+
+.slide-right-1-text a{
+    background-color: #d5d5d5;
+    transform: translate(25px,30px);
+    display: inline-block;
+    margin-top: -40px;
+    padding-left: 40px;
+    font-size: 0.8rem;
+    position: absolute;
+    direction: rtl;
+    text-align: center justify;
+    font-family: var(--ff-primary);
+    text-decoration: none;
+}
+
+/* .slide-right-1-text2{
+    background-color: #d5d5d5;
+    transform: translate(25px,30px);
+    display: inline-block;
+    margin-top: -20px;
+    padding-left: 62px;
+    font-size: 0.8rem;
+    position: absolute;
+    direction: rtl;
+    font-family: var(--ff-primary);
+}
+
+.slide-right-1-text3{
+    background-color: #d5d5d5;
+    transform: translate(25px,30px);
+    display: inline-block;
+    margin-top: 0px;
+    padding-left: 53px;
+    font-size: 0.8rem;
+    position: absolute;
+    direction: rtl;
+    font-family: var(--ff-primary);
+}
+
+.slide-right-1-text4{
+    background-color: #d5d5d5;
+    transform: translate(25px,30px);
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 55px;
+    font-size: 0.8rem;
+    position: absolute;
+    direction: rtl;
+    font-family: var(--ff-primary);
+
+} */
+
+/* پایان فسمت سایدبارهای راست */
+
+/* قسمت اسلایدهای سمت چپ */
+
+.slide-left-1{
+    width: 15%;
+    height: 250px;
+    background-color: #d3d3d3;
+    display: inline-block;
+    transform: translateY(-949px);
+    position: relative;
+    border-radius: 10px;
+}
+
+.slide-left-1-space{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left,blue,khaki,gray,red);
+    transform: translateY(-20px);
+}
+
+.slide-left-1-title{
+    display: inline-block;
+    /* position: absolute; */
+    transform: translate(55px,-8px);
+    font-size: 0.8rem;
+    color: rgb(222, 12, 230);
+    font-family: "Vazir";
+    
+}
+
+.slide-left-1-image{
+    position: absolute;
+    width: 50%;
+    height: 110px;
+    background-color: cyan;
+    transform: translate(37px, -13px);
+    border-radius: 10px;
+}
+
+.slide-left-1-image-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.slide-left-1-text{
+    display: inline-block;
+    direction: rtl;
+    font-size: 0.7rem;
+    font-family: var(--ff-primary);
+    padding-right: 7px;
+    padding-left: 7px;
+    transform: translateY(90px);
+    text-align: justify;
+
+}
+
+
+/* پایان قسمت اسلایدهای سمت چپ */
+
+/* قسمت محتوا */
+
+.content-page{
+    position: relative;
+    width: 69%;
+    height: 700px;
+    background-color: antiquewhite;
+    transform: translate(163px,-249px);
+    border-radius: 10px;
+}
+
+.content-page-title{
+    display: inline-block;
+    font-size: 0.8rem;
+    color: rgb(12, 198, 231);
+    transform: translate(595px,-8px);
+}
+
+.content-page-space{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left,blue,khaki,gray,red);
+    transform: translateY(-20px);
+}
+
+.content-page-products-box{
+    /* position: absolute; */
+    /* width: 150px;
+    height: 70px;
+    background-color: rgb(28, 228, 61);
+    transform: translateX(790px); */
+
+    /* width: 130px;
+    height: 200px; */
+    background-color: rgb(236, 236, 148);
+    /* transform: translate(820px,-1410px); */
+
+}
+
+.x1{
+    width: 130px;
+    height: 200px;
+    background-color: rgb(202, 202, 169);
+    transform: translate(740px,-1870px);
+    position: relative;
+    border-radius: 10px;
+}
+
+.x1-title{
+    position: absolute;
+    font-size: 0.8rem;
+    transform:translate(775px,-2080px);
+    /* visibility:hidden; */
+}
+
+.x1-image-box{
+    position: relative;
+    width: 130px;
+    height: 115px;
+    background-color: rgb(238, 143, 18);
+    transform: translate(740px, -2028px);
+    border-radius: 10px;
+}
+
+.xi-image-box-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.x1-image-box-link{
+    font-size: 0.7rem;
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+    background-color: bisque;
+    display: inline-block;
+    transform: translate(775px, -2020px);
+    padding: 2px;
+    border-radius: 5px;
+    outline: 0.150rem solid rgb(5, 5, 241);
+    outline-offset: .15rem;
+}
+
+.x1-image-box-link:hover{
+    color: red;
+    background-color: aqua;
+}
+
+.x1-text{
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    font-size: 0.8rem;
+    transform:translate(766px,-2060px);
+}
+/* پایان قسمت محتوا */
+
+
+/* قسمت فوتر */
+.space-content{
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to left,blue,khaki,gray,red);
+    transform: translateY(-500px);
+    /* margin-top: 2px; */
+}
+
+.footer-up{
+    width: 100%;
+    height: 200px;
+    background-color: darkseagreen;
+    transform: translateY(-514px);
+    
+}
+
+.space-footer{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left,blue,khaki,gray,red);
+    transform: translateY(-517px);
+}
+
+.footer-down{
+    width: 100%;
+    height: 25px;
+    background-color: darkseagreen;
+    transform: translateY(-530px);
+    
+}
+
+.footer-down-text{
+    direction: rtl;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.section1-footer-title{
+    transform: translateX(945px);
+    font-size: 0.8rem;
+    padding-top: 7px;
+}
+
+.section1-footer-text{
+    display: inline-block;
+    /* transform: translate(905px,-5px); */
+    direction: rtl;
+    font-family: var(--ff-primary);
+    font-size: 0.7rem;
+    border-radius: 10px;
+    height: 170px;
+    transform: translate(945px,-20px);
+}
+
+.section2-footer-title{
+    transform: translate(680px,-250px);
+    font-size: 0.9rem;
+    padding-top: 7px;
+    position: relative;
+}
+
+.section2-footer-text a{
+    /* position: absolute; */
+    /* display: inline-block; */
+    display: inline-block;
+    transform: translate(710px,-272px);
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 10px;
+    direction: rtl;
+    padding-bottom: 2px;
+    text-decoration: none;
+
+}
+
+.section3-footer{
+    width: 150px;
+    height: 200px;
+    /* background-color: cornflowerblue; */
+    transform: translate(420px,-464px);
+}
+
+.section3-footer-title{
+    /* display: inline-block; */
+    font-size: 0.8rem;
+    direction: rtl;
+    padding-top: 3px;
+
+}
+
+.section3-footer-box-image{
+    position: relative;
+    margin-top: -13px;
+   width: 30px;
+   height: 30px;
+   background-color: olive;
+   transform: translateX(115px);
+}
+
+.section3-footer-box-image-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.section3-footer-box-image-img-text{
+    font-size: 0.8rem;
+    color: rgba(8, 7, 7, 0.795);
+    direction: rtl;
+    transform: translate(-40px,-7px);
+    padding-top: 10px;
+}
+
+/* .messagebox{
+
+} */
+
+.size-cotact-form{
+    width: 40%;
+    height: 120px;
+    background-color: rgb(8, 8, 7);
+    position: relative;
+}
+
+.contact-form{
+    
+    width: 100%;
+    background: gray;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    max-width: 30rem;
+}
+
+.contact-form:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+}
+
+.contact-form h3{
+    color:var(--clr-grey-1);
+    padding-top: 1.2px;
+
+}
+
+.form-control{
+    display: block;
+    width: 40%;
+    margin-bottom: 1.5rem;
+    padding:1rem 1rem;
+    border: none;
+    background: rgba(240, 230, 140, 0.541);
+    border-radius: 10px;
+    direction:rtl;
+}
+
+.form-group{
+    padding: 1rem 1rem;
+}
+
+.form-control::placeholder{
+    font-family:"Vazir";
+    color: rgb(216, 245, 173);
+}
+
+.submit-btn{
+    /* display: block; */
+    width: 40%;
+    padding: 1rem;
+    border: none;
+    font-family:var(--ff-primary);
+    outline: 0.200rem solid rgb(196, 196, 216);
+    outline-offset: .35rem;
+
+}
+
+.submit-btn:hover{
+    background: rgb(163, 214, 226);
+    color: red;
+}
